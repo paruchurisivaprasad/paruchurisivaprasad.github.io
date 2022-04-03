@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Serif:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #2d2d2d;
+    color: aliceblue;
+}
+
+#img1{
+width: 100%;
+height: 94vh;
+position: relative;
+opacity: 0.5;
+}
+#img2{
+    width: 100%;
+    height: 94vh;
+    display: none;
+}
+#img3{
+    width:100%;
+    height: 94vh;
+display: none;
+}
+nav{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+width: 100%;   
+padding: 20px 21px 20px 21px;
+background: lightslategray;
+height: 50px;
+}
+nav h1{
+    color: orange;
+    background:rgb(100, 95, 95);
+    padding: 9px;
+    border-radius: 10px;
+}
+nav h1:hover{
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+nav ul{
+color: blanchedalmond;    
+}
+nav ul li{
+    position: relative;
+list-style: none;
+display: inline-block;
+justify-content: space-between;
+position: relative;
+
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    margin: 10px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 9px;
+
+    
+}
+nav ul li a:hover{
+color: green;
+    
+    letter-spacing: 2px;
+    
+    font-weight: 500;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+
+#klu1,nav ul li a:hover{
+    
+ 
+ color: white;
+ 
+ 
+}
+#but1{
+    margin-top: 10px;
+    margin-left: 45%;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background:linear-gradient(to right,orange,white,green);
+
+}
+#but2{
+    
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+
+}
+#but3{
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+
+
+}
+#logo{
+    position: absolute;
+    top:41%;
+    margin-left: 120px;
+    width: 200px;
+    background-image: linear-gradient(to right,orange,white,green);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+
+    color: #000;
+    padding: 5px;
+    border-radius: 12px;
+    
+
+}
+#logo:hover{
+    background-image: linear-gradient(to right,white,green);
+    color: red;
+    border-radius: 22px 22px 22px 22px;
+
+
+}
+#matter{
+    position: absolute;
+    top: 65%;
+    margin-left: 2%;
+    color: red;
+    background-color: white;
+padding: 10px;
+border-radius: 39px;
+padding: 10px;
+font-size: 28px;
+font-weight: 900;
+width: 50%;
+}
+
+#mattert{
+    margin: 100px;
+    border-left: 5px solid green;
+    border-right: 5px dotted yellowgreen;
+    padding: 10px;
+}
+article{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.inside1{
+    display: none;
+}
+
+ .inside1 ul{
+    position: absolute;
+    text-align: left;
+margin-left: 0px;
+width: 250px;
+margin-left: 17px;
+margin-top: 10px;
+background:rgb(158, 93, 67);
+
+}
+ .inside1 ul li{
+    width: 248px;
+  padding: 0px;
+  margin-left: 1px ;
+    margin-top: 22px;
+
+    
+}
+
+.inside1 ul li a{
+
+
+   
+    
+    
+}
+
+ .inside1 ul li:last-child{
+
+
+margin-bottom: 12px;
+
+}
+
+.inside1 ul li a:hover{
+    
+    color: whitesmoke;
+    
+}
+
+
+
+nav ul li:hover .inside1{
+display: block;
+}
+nav ul li:hover .inside1 ul li{
+border-bottom: 0px solid blue;  
+ 
+ }
+ nav ul li:hover .inside1 ul li:last-child{
+    border-bottom: none;
+     
+     }
+     .submenu{
+         position: absolute;
+         margin-left: 230px;
+         margin-top: -47px;
+         
+     }
+     .submenu ul {
+         display: none;
+     }
+
+.slide1:hover .submenu ul {
+    display: block;
+}     
+.slide1 .submenu ul{
+    width: 200px;
+    border-left: 1px solid rgb(249, 250, 249);
+}
+.slide1 .submenu ul li{
+    width: 198px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+
+.slide1 .submenu ul li a{
+    padding: 0;
+
+
+    color: gold;
+    
+    
+    }
+
+
+.slide1 .submenu ul li a:hover{
+color: rgba(255, 255, 255, 0.884);
+
+}
+
+     .fas{
+        margin-right: -15px;
+     }
+     .fa{
+         margin-left: -20px;
+         margin-right: 20px;
+     }
+
+     nav ul li #klu2:hover .fa{
+
+
+    } 
