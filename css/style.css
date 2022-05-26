@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@450&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* home */
+
+#backimg {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#navBar {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  top: 0%;
+}
+.navlink {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+.navlink:hover {
+  color: #ff6666;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.lastlink {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 18px;
+
+  font-family: "Roboto", sans-serif;
+}
+.lastlink:hover{
+    color: #ff6666;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+
+}
+
+.folio {
+  color: green;
+}
+#navbrand {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.textonhome {
+  position: absolute;
+  top: 39%;
+  color: white;
+  margin-left: 6%;
+}
+#demo {
+  color: red;
+}
+.name {
+  font-size: 51px;
+  font-weight: 700;
+}
+
+/* about */
+
+#about {
+  background-color: ghostwhite;
+}
+#sivaimg {
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+}
+
+#row1 {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#row2 {
+  background-color: white;
+  color: #242B2E;
+  transition: all 0.6s;
+}
+#row2:hover {
+  border-radius: 20px;
+}
+#aboutintro {
+  font-size: 23px;
+}
+#row21 {
+  transition: all 0.4s;
+}
+
+#row2:hover #row21 {
+  transform: scale(1.04, 1.04);
+}
+#downarrow {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  animation-name: mation;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+}
+
+@keyframes mation {
+  0% {
+    top: 75%;
+  }
+  100% {
+    top: 80%;
+  }
+}
+
+.fa-angle-down {
+  text-align: center;
+}
+
+/* skills*/
+
+#skill5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills {
+  background-color: rgba(139, 78, 78, 0.823);
+  color: snow;
+}
+.parentbar {
+  width: 45vw;
+  height: 7px;
+  background-color: white;
+}
+#htmls {
+  width: inherit;
+  height: inherit;
+  background-color: green;
+}
+progress {
+  width: 45vw;
+  height: 8px;
+}
+#projects {
+  background-color: black;
+}
+.card {
+  background-color: #758283;
+  overflow: hidden;
+  transition: all 1s;
+  border-radius: 10px;
+}
+.card:hover {
+  border-radius: 20px;
+}
+.card-body {
+  transition: all 0.5s;
+}
+.card-body h4{
+  color: #CAD5E2;
+}
+.card:hover .card-body {
+  transform: scale(1.08, 1.08);
+  background-color: #E07C24;
+  cursor: pointer;
+  color: white;
+}
+#img1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#img2 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+#img3 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+#contact {
+  background-color: crimson;
+  color: white;
+}
+
+
+
+#reg-form {
+  display: grid;
+  place-items: center;
+  background-color: rgb(225, 2, 54);
+}
+
+#footer {
+  background-color: rgb(41, 33, 33);
+  color: gold;
+  padding-bottom: 10px;
+}
+
+.fa-facebook {
+  width: 20px;
+  height: 20px;
+  background: #3b5998;
+  color: white;
+  border-radius: 50%;
+  margin: 10px;
+  
+  
+}
+.fa-instagram {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  background: #125688;
+  color: white;
+}
+
+#resume {
+  width: 120px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+#resume:hover {
+  border-radius: 10px;
+}
+.project{
+  color: #CAD5E2;
+}
+
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 26px;
+  }
+  #aboutmetext {
+    font-size: 44px;
+  }
+  #aboutname {
+    font-size: 20px;
+  }
+  #aboutintro {
+    font-size: 18px;
+  }
+  progress {
+    width: 80vw;
+  }
+  #navi {
+  }
+  #navBar {
+    background-color: darkblue;
+  }
+  #downarrow {
+  }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+  #downarrow {
+    display: block;
+  }
+  #navBar {
+    background-color: darkblue;
+  }
+}
