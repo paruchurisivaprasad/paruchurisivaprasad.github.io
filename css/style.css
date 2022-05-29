@@ -329,6 +329,14 @@ body{
   #downarrow {
   }
 }
+#email-success{
+  display: none;
+  text-align: center;
+  padding: -10px;
+  color: #E07C24;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
 
 @media (min-width: 600px) and (max-width: 991px) {
   #downarrow {
