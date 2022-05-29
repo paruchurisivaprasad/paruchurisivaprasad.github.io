@@ -1,4 +1,5 @@
 let i = 0;
+const emailSuccess = document.getElementById("email-success");
 var txt = "blogger   ";
 var speed = 300;
 let doc = document.querySelector("#demo");
@@ -71,25 +72,35 @@ let insertContact = (payload) => {
     body: raw,
     redirect: "follow",
   };
+  var form = document.getElementById("form");
 
   fetch("https://usercontactnow.herokuapp.com/v1/contactus", requestOptions)
     .then((response) => response.text())
-    .then((result) => console.log(result))
+    .then((result) => {
+      console.log(result);
+      form.reset();
+
+      emailSuccess.style.display = "block";
+      setTimeout(() => {
+      emailSuccess.style.display = "none";
+        
+      }, 3000);
+    })
     .catch((error) => console.log("error", error));
 };
 
-
-var form=document.getElementById('form');
-form.addEventListener('submit',function(event){
+form.addEventListener("submit", function (event) {
   event.preventDefault();
   const formData = new FormData(form);
   const formDataSerialized = Object.fromEntries(formData);
+
   console.log(formDataSerialized);
-  let apiPayload={
-    name:formDataSerialized.txtName,
+  let apiPayload = {
+    name: formDataSerialized.txtName,
     phoneNumber: formDataSerialized.txtPhone,
     email: formDataSerialized.txtEmail,
-    message: formDataSerialized.txtMsg
-  }
+    message: formDataSerialized.txtMsg,
+  };
+
   insertContact(apiPayload);
-})
+});
