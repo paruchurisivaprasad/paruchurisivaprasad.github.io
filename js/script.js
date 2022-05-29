@@ -72,17 +72,21 @@ let insertContact = (payload) => {
     body: raw,
     redirect: "follow",
   };
-  var form =  document.getElementById("form");
+  var form = document.getElementById("form");
 
-  let result=fetch("https://usercontactnow.herokuapp.com/v1/contactus", requestOptions)
-    .then((response) => response.json())
-  if(result.status==='ok'){
-    alert('submitted');
-  }
-  else{
-    alert('not submited')
-  }
-   
+  fetch("https://usercontactnow.herokuapp.com/v1/contactus", requestOptions)
+    .then((response) => response.text())
+    .then((result) => {
+      console.log(result);
+      form.reset();
+
+      emailSuccess.style.display = "block";
+      setTimeout(() => {
+      emailSuccess.style.display = "none";
+        
+      }, 10000);
+    })
+    .catch((error) => console.log("error", error));
 };
 
 form.addEventListener("submit", function (event) {
