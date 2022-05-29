@@ -15,9 +15,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="./css/style.css" />
+
+
+    <!--  -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  -->
 </head>
 
 <body>
@@ -198,21 +206,35 @@
     </div>
     <!-- contact  -->
 
-    <div data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500" id="contact"
-        class="container-fluid p-2 text-center">
-        <h3 class="">Contact Me</h3>
-
-        <div id="contact1" class="">
-            <br />
-            <h3>Phone Number</h3>
-
-            <h5><i class="fa fa-mobile fa-2x"></i> 9347633052</h5>
-            <br />
-            <h3>Email</h3>
-            <h6><i class="fa fa-envelope"></i> paruchurisivaprasad99@gmail.com</h6>
-            <h6><i class="fa fa-envelope"></i> paruchurisivaprasad88@gmail.com</h6>
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
         </div>
-    </div>
+        <form method="post" id="form">
+            <h3>Drop Us a Message</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group formdata">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" required />
+                    </div>
+                    <div class="form-group formdata">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required/>
+                    </div>
+                    <div class="form-group formdata">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" required/>
+                    </div>
+                    <div class="form-group formdata">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
 
     <!-- footer -->
 
