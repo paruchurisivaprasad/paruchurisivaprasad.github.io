@@ -59,12 +59,7 @@ let insertContact = (payload) => {
   myHeaders.append("content-type", "application/json");
 
   var raw = JSON.stringify(payload);
-  // {
-  //   name: "Harish Paruchuri",
-  //   phoneNumber: "9854323455",
-  //   email: "Harish2@gmail.com",
-  //   message: "Hey I want to Connect With you regarding Node Js",
-  // }
+ 
 
   var requestOptions = {
     method: "POST",
