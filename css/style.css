@@ -43,13 +43,14 @@ body {
   color: ghostwhite;
   text-decoration: none;
   font-size: 18px;
-
+padding:3px;
   font-family: "Roboto", sans-serif;
 }
 .lastlink:hover{
     color: #ff6666;
   background-color: #fff;
   border-radius: 5px;
+  padding:3px;
 
 }
 
