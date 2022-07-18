@@ -74,6 +74,7 @@ let insertContact = (payload) => {
   fetch("https://usercontactnow.herokuapp.com/v1/contactus", requestOptions)
     .then((response) => response.text())
     .then((result) => {
+    console.log(result);
       
       form.reset();
           dataprocess.style.display='none';
