@@ -25,6 +25,8 @@ function typeWriter() {
 }
 
 typeWriter();
+let dataprocess=document.querySelector('#dataprocess');
+
 
 let rowcol1 = document.querySelector("#row2");
 
@@ -74,6 +76,8 @@ let insertContact = (payload) => {
     .then((result) => {
       
       form.reset();
+          dataprocess.style.display='none';
+
 
       emailSuccess.style.display = "block";
       setTimeout(() => {
@@ -88,6 +92,9 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   const formData = new FormData(form);
   const formDataSerialized = Object.fromEntries(formData);
+  
+    dataprocess.innerHTML=' Please wait! submitting data. it may take 6-7 seconds on first attempt '
+
 
   console.log(formDataSerialized);
   let apiPayload = {
