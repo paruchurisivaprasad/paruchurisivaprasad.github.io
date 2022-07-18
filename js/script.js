@@ -1,4 +1,12 @@
 let i = 0;
+
+document.addEventListener("contextmenu", function (e)
+
+{ 
+  e. preventDefault(); 
+  alert("sorry!, right click is disabled")
+}, false);
+
 const emailSuccess = document.getElementById("email-success");
 var txt = "blogger   ";
 var speed = 300;
