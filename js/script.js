@@ -93,7 +93,7 @@ form.addEventListener("submit", function (event) {
   const formData = new FormData(form);
   const formDataSerialized = Object.fromEntries(formData);
   
-    dataprocess.innerHTML=' Please wait! submitting data. it may take 6-7 seconds on first attempt '
+    dataprocess.innerHTML=' Please wait! submitting data. it may take upto 5 seconds on first attempt '
 
 
   console.log(formDataSerialized);
