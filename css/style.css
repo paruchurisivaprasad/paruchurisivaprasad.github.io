@@ -244,16 +244,16 @@ progress {
 }
 
 #resumebtn {
-  width: 120px;
-  height: 40px;
-  border-radius: 2px;
+  width: 90px;
+  height: 35px;
+  border-radius: 4px;
   border:none;
   background-color:red;
   color:white;
 }
 
 #resumebtn:hover {
-  border-radius: 5px;
+  border-radius: 7px;
 }
 #resume{
   color:white;
