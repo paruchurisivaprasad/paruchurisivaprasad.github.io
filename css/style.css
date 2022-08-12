@@ -255,6 +255,10 @@ progress {
 #resumebtn:hover {
   border-radius: 5px;
 }
+#resume{
+  color:white;
+
+}
 .project{
   color: #CAD5E2;
 }
