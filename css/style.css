@@ -243,14 +243,17 @@ progress {
   color: white;
 }
 
-#resume {
+#resumebtn {
   width: 120px;
   height: 40px;
   border-radius: 2px;
+  border:none;
+  background-color:red;
+  color:white;
 }
 
-#resume:hover {
-  border-radius: 10px;
+#resumebtn:hover {
+  border-radius: 5px;
 }
 .project{
   color: #CAD5E2;
