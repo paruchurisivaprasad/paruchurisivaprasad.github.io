@@ -63,7 +63,7 @@ padding:3px;
 }
 #navbrand {
   font-size: 42px;
-  font-weight: 540
+  font-weight: 540;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -169,7 +169,7 @@ progress {
   background-color: black;
 }
 .card {
-  background-color: #758283;
+  background-color: #2151f1;
   overflow: hidden;
   transition: all 1s;
   border-radius: 10px;
@@ -193,6 +193,11 @@ progress {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+#imgv{
+  width: 150px;
+  height: 150px;
+border-radius: 20%;
 }
 #img2 {
   width: 130px;
