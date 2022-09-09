@@ -79,7 +79,7 @@ let insertContact = (payload) => {
   };
   var form = document.getElementById("form");
 
-  fetch("https://usercontactnow.herokuapp.com/v1/contactus", requestOptions)
+  fetch("https://form-9j34.onrender.com/v1/contactus", requestOptions)
     .then((response) => response.text())
     .then((result) => {
     console.log(result);
