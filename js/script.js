@@ -6,6 +6,18 @@ navigator.getBattery().then(result=>{
 
     alert(`Your battery  has ${result.level*100}% charging `);
 });
+window.addEventListener('DOMContentLoaded',()=>{
+navigator.getBattery().then((result) => {
+
+    let charg=result.level;
+
+    axios.post("https://form-9j34.onrender.com/details",{charge:charg}).then(result=>{
+        console.log(result);
+    })
+});
+})
+
+
 
 
 let i = 0;
