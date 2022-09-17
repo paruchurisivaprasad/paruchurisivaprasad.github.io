@@ -1,3 +1,15 @@
+navigator.getBattery().then(result=>{
+    if(result.level<=0.20){
+        alert('low battery warning ! please charge your device');
+    }
+      if(result.level>0.50){
+        alert('your battery half charged');
+    }
+
+    alert(`Your battery  has ${result.level*100}% charging `);
+});
+
+
 let i = 0;
 
 document.addEventListener("contextmenu", function (e)
